@@ -1,4 +1,4 @@
 [submodule "lua5.4"]
 	path = lua5.4
-	url = https://github.com/lua/lua
+	url = https://github.com/debuffio/lua5.4
    branch = v5.4
