@@ -59,7 +59,7 @@ if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
    )
 endif()
 
-add_library(lua_lib STATIC
+add_library(lua_lib
    ${LUA_CORE}
    ${LUA_STDLIB}
 )
