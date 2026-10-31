@@ -67,7 +67,7 @@ if(UNIX AND NOT APPLE)
 	target_compile_definitions(lua_lib PUBLIC LUA_USE_LINUX)
 	target_link_libraries(lua_lib PUBLIC ${CMAKE_DL_LIBS})
 elseif(APPLE)
-	target_compile_definitions(lua_lib PUBLIC LUA_USE_MACOSX)
+	target_compile_definitions(lua_lib PUBLIC LUA_USE_POSIX LUA_USE_DLOPEN)
 	target_link_libraries(lua_lib PUBLIC ${CMAKE_DL_LIBS})
 endif()
 
